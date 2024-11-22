@@ -67,17 +67,40 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. It all
 ## 4. Differences Between Node.js and Browser JavaScript
 
 ### Execution Environment:
+
 - **Node.js** runs on the server-side and executes JavaScript outside the browser environment. It’s used to build server applications.
 - **Browser JavaScript** runs in the browser and interacts with the DOM (Document Object Model) to manipulate web pages, handle events, etc.
 
 ### Global Objects:
+
 - In **Node.js**, I have access to global objects like `__dirname`, `process`, `require`, etc., which are not available in the browser environment.
 - In the **browser**, I can interact with objects like `window`, `document`, and `localStorage`.
 
 ### Asynchronous Nature:
+
 - **Node.js** is event-driven and non-blocking. It uses asynchronous I/O operations, meaning it doesn’t wait for a task to finish before moving on to the next. For example, if reading a file takes time, Node.js doesn’t block the process; it moves on to other tasks while waiting for the file to finish loading.
 - **Browser JavaScript**, on the other hand, often deals with the event loop and asynchronous code via callbacks or Promises, but it’s primarily concerned with user interface interactions.
 
 ### Why Node.js is Suitable for Servers:
+
 - **Concurrency**: Node.js can handle many requests simultaneously without creating a new thread for each request, thanks to its event loop. This makes it lightweight and ideal for building scalable applications.
 - **Real-time Applications**: Node.js is excellent for real-time apps because it allows for constant communication between the client and server without needing to refresh the page, which is commonly used in chat apps, online gaming, and collaborative tools.
+
+## 5. My first Node.js Script. Yay!
+
+- As I have covered the basics it is now time to get my hands dirty and create a script which strores the code in a file instead of executing immediately like the REPL does.
+
+  - A script called `app.js` will be populated with this content:
+    ```javascript
+    console.log("Yay! My first Node.js script");
+    ```
+  - To run the code I simply run this on the terminal:
+    ```bash
+    node app.js
+    ```
+
+## **Resources I’m Using**
+
+- [Node.js Official Documentation](https://nodejs.org/en/docs/)
+- [Node.js Guide for Beginners](https://nodejs.dev/)
+- [Understanding Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
