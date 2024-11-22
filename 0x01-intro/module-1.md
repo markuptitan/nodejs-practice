@@ -62,4 +62,4 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. It all
   > console.log("Here is something cool!")
   ```
 
-- **Exiting the REPL**: I can exit the REPL by pressing **CCTRL+D** or **CTRL+C** twice.
+- **Exiting the REPL**: I can exit the REPL by pressing **CTRL+D** or **CTRL+C** twice.
