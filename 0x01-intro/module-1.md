@@ -45,3 +45,21 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. It all
   ```
 
   This should display the installed version of **Node.js** and **NPM(Node Package Manager)**
+
+### 3. First Steps with Node.js
+
+- **Using the Node.js REPL (Read-Eval-Print Loop)**: The REPL allows me to quickly run JavaScript commands in the **Node.js** envirnoment:
+
+  1. Start the REPL:
+
+  ```bash
+  node
+  ```
+
+  2. Print something cool:
+
+  ```javascript
+  > console.log("Here is something cool!")
+  ```
+
+- **Exiting the REPL**: I can exit the REPL by pressing **CCTRL+D** or **CTRL+C** twice.
